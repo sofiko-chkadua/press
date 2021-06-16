@@ -1,0 +1,196 @@
+.card {
+    max-width: 550px;
+    min-width: 295px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 65px;
+    width: 49%;
+}
+
+.card:last-child {
+    margin-bottom: 0px;
+}
+
+.card__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+            align-items: flex-start;
+    height: 27px;
+}
+
+.card__link {
+    display: block;
+    text-decoration: none;
+}
+
+.card__link:hover, .card__link:active, .card__link:focus {
+    text-decoration: none;
+}
+
+.card_hidden {
+    display: none;
+}
+
+.card__image {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+    background-position: center;
+}
+
+.card:nth-child(4n) .card__image, .card:nth-child(4n + 1) .card__image {
+    height: 420px;
+}
+
+.card__header {
+    /* max-height: 156px; */
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #312E2D;
+    margin-bottom: 30px;
+}
+
+.card:nth-child(4n) .card__header, .card:nth-child(4n + 1) .card__header {
+    font-size: 20px;
+}
+
+.card__date {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #67605A;
+}
+
+.card__icon {
+    width: 59%;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: center;
+}
+
+@media screen and (max-width: 1040px) {
+    .card__image {
+        height: 275px;
+        background-position: right;
+    }
+    .card:nth-child(4n) .card__image, .card:nth-child(4n + 1) .card__image {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .card__icon {
+        zoom: 0.8;
+        width: 50%;
+    }
+
+    .card {
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .card__image {
+        height: 195px;
+    }
+    .card:nth-child(4n) .card__image, .card:nth-child(4n + 1) .card__image {
+        height: 230px;
+    }
+    .card__header {
+        font-size: 22px;
+    }
+    .card:nth-child(4n) .card__header, .card:nth-child(4n + 1) .card__header {
+        font-size: 16px;
+    }
+    .card__date {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .card {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    .card__image {
+        height: 275px;
+        background-position: center;
+    
+        }
+        
+        .card:nth-child(4n) .card__image,
+        .card:nth-child(4n + 1) .card__image {
+            height: 330px;
+        }
+        .card__icon {
+            zoom: normal;
+            width: 50%;
+        }
+
+        .card__header {
+            font-size: 30px;
+        }
+        .card:nth-child(4n) .card__header, .card:nth-child(4n + 1) .card__header {
+            font-size: 20px;
+        }
+        .card {
+            margin-bottom: 70px;
+        }
+        .card__box {
+            align-items: center;
+        }
+}
+
+
+@media screen and (max-width: 400px) {
+    .card {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .card__image {
+        height: 230px;
+        background-position: center;
+    
+        }
+        
+        .card:nth-child(4n) .card__image,
+        .card:nth-child(4n + 1) .card__image {
+            height: 230px;
+        }
+        .card__icon {
+            zoom: 0.8;
+            width: 54%;
+        }
+
+        .card__header {
+            font-size: 16px;
+        }
+        .card:nth-child(4n) .card__header, .card:nth-child(4n + 1) .card__header {
+            font-size: 16px;
+        }
+}

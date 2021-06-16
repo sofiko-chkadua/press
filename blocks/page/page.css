@@ -1,0 +1,45 @@
+.page {
+  font-family: "Graphik LCG", Arial, sans-serif;
+   color:  #312E2D;
+   margin: 0 auto;
+   background: -webkit-gradient(linear,  left top, right top,  color-stop(-3.21%, #F9F9F9), color-stop(103.72%, #EAE6E4));
+   background: -o-linear-gradient(left,  #F9F9F9 -3.21%, #EAE6E4 103.72%);
+   background: linear-gradient(to right,  #F9F9F9 -3.21%, #EAE6E4 103.72%);
+ }
+ 
+ .page__content {
+   max-width: 1160px;
+   margin: 0 auto;
+   overflow: hidden;
+ 
+ }
+ 
+ @media screen and (max-width: 1191px) {
+   .page__content {
+     /* max-width: 940px; */
+     padding-top: 185px;
+     padding-left: 20px;
+     padding-right: 20px;
+   }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 992px) {
+   .page__content {
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 85px;
+   }
+ }
+ 
+ @media screen and (max-width: 678px) {
+   .page__content {
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 85px;
+ }
+ .page__contact {
+   padding-top: 50px;
+ }
+ }
